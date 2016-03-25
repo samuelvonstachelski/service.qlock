@@ -68,6 +68,7 @@ def drawBackground(background):
     WINDOW.setProperty( "Qlock.%i.Background" % (i+1), background[i])
     
 def drawHighlight(background, dom):
+  global now
   now = datetime.datetime.now()   
   for i in range (1,111):
     WINDOW.clearProperty("Qlock.%i.Highlight" % i) 
